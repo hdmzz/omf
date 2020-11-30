@@ -3,16 +3,24 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="style/style2/style2.css">
         <script src="https://kit.fontawesome.com/96d3fd8f4a.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
         <title>OhMyFood</title>
     </head>
     <body>
+        
         <!-- loader spinner -->
-        <!-- <div class="loading">  
+        <div class="loader-spinner">
+            <span id="loader-spinner1">
+            </span>
+            <span id="loader-spinner2">
+            </span>
+            <span id="loader-spinner3">
+            </span>
         </div>
-        <div class="loaderBackGround"></div> -->
+        <div class="loader-spinner-end">
+        </div>
         <!-- =============== -->
         <header>
             <div class="logo">
@@ -51,6 +59,9 @@
                  <div class="carte_menu">
                         <article class="carte_menu__">
                             <a href="pages/palette.html">
+                                <span class="nouveau">
+                                    Nouveau
+                                </span>
                                 <div class="conteneur_image">
                                     <div>
                                         <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"/>
@@ -62,16 +73,19 @@
                                         <p>Ménilmontant</p>
                                     </div>
                                     <div class="coeur">
-                                        <i class="far fa-heart"></i>
-                                        <i class="fas fa-heart coeurRempli"></i>
+                                        <span class="coeurVideConteneur"><i class="far fa-heart coeurVide"></i></span>
+                                        <span class="coeurPleinConteneur"><i class="fas fa-heart coeurRempli"></i></span>
                                     </div>
                                 </div> 
                             </a>
                         </article>
                         <article class="carte_menu__">
                             <a href="pages/noteenchante.html">
-                                <div>
-                                    <div class="conteneur_image">
+                                <span class="nouveau">
+                                    Nouveau
+                                </span>
+                                <div class="conteneur_image">
+                                    <div>
                                         <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"/>
                                     </div>
                                 </div>
@@ -81,20 +95,16 @@
                                         <p>Charonne</p>
                                     </div>
                                     <div class="coeur">
-                                        <div class="coeurVide">
-                                            <i class="far fa-heart "></i>
-                                        </div>
-                                        <div class="coeurPlein">
-                                        <i class="fas fa-heart coeurPlein"></i>
-                                        </div>
+                                        <i class="far fa-heart "></i>
+                                        <i class="fas fa-heart coeurRempli"></i>
                                     </div>
                                  </div>
                             </a>
                         </article>
                         <article class="carte_menu__">
                             <a href="pages/alafrancaise.html">
-                                <div>
-                                    <div class="conteneur_image">
+                                <div class="conteneur_image">
+                                    <div>
                                         <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"/>
                                     </div>
                                 </div>
@@ -112,8 +122,8 @@
                         </article>
                         <article class="carte_menu__">
                             <a href="pages/delicessens.html">
-                                <div>
-                                    <div class="conteneur_image">
+                                <div class="conteneur_image">
+                                    <div>
                                         <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"/>
                                     </div>
                                 </div>
