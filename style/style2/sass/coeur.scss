@@ -1,0 +1,65 @@
+.coeur{
+    position: relative;
+    top: 5px;
+    font-size: 175%;
+    height: min-content;
+    left: -2rem;
+    color: #000;
+
+    &:hover{
+        animation-name: coeur1;
+        animation-duration: .2s;
+        animation-delay: .2s;
+        animation-fill-mode: forwards;    
+      }
+    
+    .far{
+        position: absolute;
+    }
+
+    .far:hover{
+        animation-name: coeur1;
+        animation-duration: .2s;
+        animation-delay: .2s;
+        animation-fill-mode: forwards;    
+      }
+     
+    .coeurRempli{
+        position: absolute;
+        opacity: 0;
+        transition: 1s ease;
+        left: 0;
+      
+        &:hover{
+            opacity: 1;
+            transform: scale(1);
+            background-clip: text;
+        } 
+    }   
+  }
+
+  .coeurRempli{
+    color:#d160f3;
+  }
+
+  @keyframes coeur1{
+      0%{
+          color: #000;
+      }
+
+      25%{
+          color:  #e4d5f6;
+      }
+
+      50%{
+          color:  #e4d5f6;
+      }
+
+      75%{
+          color: #d160f3;
+      }
+
+      100%{
+          color: #d160f3;
+      }
+  }
